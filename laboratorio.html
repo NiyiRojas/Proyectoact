@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Laboratorio JS y AJAX - Mi Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo"><a href="index.html">Mi Blog</a></h1>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="post1.html">Entrada 1</a>
+      <a href="post2.html">Entrada 2</a>
+      <a href="post3.html">Entrada 3</a>
+      <a href="laboratorio.html">Laboratorio JS/AJAX</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container post-page">
+  <article class="post">
+
+    <h2>Laboratorio JavaScript y AJAX</h2>
+    <p class="meta">Integrado al blog</p>
+
+    <h3>1. Palíndromo</h3>
+    <input type="text" id="palInput" placeholder="Escribe una frase">
+    <button onclick="detectarPalindromo()">Comprobar</button>
+    <p id="palResultado"></p>
+
+    <hr>
+
+    <h3>2. Mayor de dos números</h3>
+    <input type="number" id="num1" placeholder="Número 1">
+    <input type="number" id="num2" placeholder="Número 2">
+    <button onclick="calcularMayor()">Calcular</button>
+    <p id="mayorResultado"></p>
+
+    <hr>
+
+    <h3>3. Vocales presentes</h3>
+    <textarea id="fraseVocales" rows="2"></textarea>
+    <button onclick="mostrarVocales()">Mostrar</button>
+    <p id="vocalesResultado"></p>
+
+    <hr>
+
+    <h3>4. Conteo de vocales</h3>
+    <textarea id="fraseConteo" rows="2"></textarea>
+    <button onclick="contarVocales()">Contar</button>
+    <pre id="conteoResultado"></pre>
+
+    <hr>
+
+    <h3>5. AJAX</h3>
+    <input type="text" id="urlInput" style="width:100%;">
+    <button id="btnMostrar">Mostrar contenidos</button>
+
+    <p><strong>Estado:</strong> <span id="estadoPeticion">0</span></p>
+    <div id="contenidos" style="border:1px solid #ddd; padding:10px; min-height:100px;"></div>
+
+    <h3>Cabeceras</h3>
+    <pre id="cabeceras"></pre>
+
+    <h3>Código</h3>
+    <p id="codigoEstado"></p>
+
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2025 - Niyireth Rojas Narvaez</p>
+  </div>
+</footer>
+
+<script src="lab.js"></script>
+
+</body>
+</html>
